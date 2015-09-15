@@ -13,8 +13,11 @@
   <link href="http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,100italic,300italic,400" rel="stylesheet" type="text/css">
   <!-- Bootstrap 3.3.5 -->
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-
+  
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Font mfizz -->
   <link rel="stylesheet" type="text/css" href="/css/font-mfizz.css">
 
   <!-- Design Style MyWALL -->
@@ -60,32 +63,6 @@
   <header>
     <!-- Menu Navigation -->
     <div id="top" class="container">
-      <!-- Menu left -->
-      <nav id="ha-header" class="left-nav ha-header">
-        <ul class="nav">
-            <li class="dropdown">
-              <!-- Dropdown menu -->
-              <a class="dropdown-toggle circle-main" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">        
-            <svg class="hello" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 15.5v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20v-2H2z"/>
-                <path d="M0 0h24v24H0z" fill="none"/>
-            </svg>
-              </a>
-              <!-- Navigation Sections -->
-              <ul class="dropdown-menu">
-            <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#top" class="menu-item wall">Hello</a></li>
-            <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#about" class="menu-item wall">About Me</a></li>
-            <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#skills" class="menu-item wall">Skills and Abilities</a></li>
-            <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#education" class="menu-item wall">Education</a></li>
-            <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#work" class="menu-item wall">Work Experience</a></li>
-            <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#portfolio" class="menu-item wall">Portfolio</a></li>
-            <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#download" class="menu-item wall">Social Networks</a></li>
-            <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#contacto" class="menu-item wall">Contact Me</a></li>
-              </ul>
-            </li>
-          </ul>
-      </nav>
-      <!-- // Menu left -->
 
       <!-- Menu right - Hidden in small devices -->
       <div class="nav-extra hidden-xs">
@@ -102,14 +79,50 @@
 
     <!-- Personal Details -->
     <div class="container">
-      <img class="img-circle imgsus" alt="Andrey Grekov" src="/img/profile.png"/>
-      <h1 class="name-boss">Andrey Grekov</h1>
+      <img class="img-circle imgsus" alt="Andrey Grekov" src="/img/profile.png" style="width: 168px;"/>
+      <h1 class="name-boss">I'm Andrey Grekov <span class="blinker"></span></h1>
       <h2 class="main-details">Programmer. Creative. Innovator.</h2>
       <!-- <p class="extend-details">For me..</p> -->
     </div>
     <!-- // Personal Details -->
   </header>
   <!-- // Header -->
+
+
+  <!-- NAVIGATION START -->
+  <nav id="navigation" class="navbar navbar-fixed-top center-menu" role="navigation">
+      <div class="container navbar-container">
+          <div class="navbar-header page-scroll">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".berg-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand visible-xs visible-sm" href="#page-top">BERG</a>
+          </div>
+          <!-- //.navbar-header -->
+          
+          <div class="navbar-collapse collapse berg-collapse">
+              <ul class="nav navbar-nav">
+
+                  <li class="page-scroll"><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#top">Hello</a></li>
+                  <li class="page-scroll"><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#about">About Me</a></li>
+                  <li class="page-scroll"><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#skills">Skills and Abilities</a></li>
+                  <li class="page-scroll"><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#education">Education</a></li>
+                  <li class="page-scroll"><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#work">Work Experience</a></li>
+                  <li class="page-scroll"><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#portfolio">Portfolio</a></li>
+                  <li class="page-scroll"><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#download">Social Networks</a></li>
+                  <li class="page-scroll"><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#contacto">Contact Me</a></li>
+
+              </ul>
+          </div>
+          <!-- //.navbar-collapse -->
+      </div>
+      <!-- //.navbar-container -->
+  </nav>
+  <!-- //NAVIGATION END -->
   
   <!-- About Me Intro - Text Type - Hi. I'm ... -->
   <section id="about" class="cd-intro">
@@ -162,7 +175,7 @@
           <!-- Col 2 -->
           <div class="col-sm-4">
             <div class="row">
-              <div class="col-md-4 img-myextra"><img alt="quality" class="img-myextrame" src="/img/quality.png"></div>
+              <div class="col-md-4 img-myextra"><img alt="quality" class="img-myextrame" src="/img/w_quality.png"></div>
               <div class="col-md-8">
                 <h5 class="text-five">Quality work</h5>
                 <p class="text-subfive">I enjoy the pleasure of a well-made project.</p>
@@ -172,7 +185,7 @@
           <!-- Col 3 -->
           <div class="col-sm-4">
             <div class="row">
-              <div class="col-md-4 img-myextra"><img alt="coffe" class="img-myextrame" src="/img/coffee.png"></div>
+              <div class="col-md-4 img-myextra"><img alt="coffe" class="img-myextrame" src="/img/w_coffee.png"></div>
               <div class="col-md-8">
                 <h5 class="text-five">Coffe lover</h5>
                 <p class="text-subfive">Seriously, a very big fan of coffee :)</p>
@@ -189,20 +202,19 @@
   <!-- About Me Gallery -->
   <section id="aboutme" class="full-section ha-waypoint" data-animate-down="ha-header-subshow" data-animate-up="ha-header-show">
     <!-- Owl Carousel images -->
-    <!-- data-src="holder.js/347x260" -->
     <div class="owl-carousel">
-        <div class="item"><img src="/img/photos/photo01.jpg" alt="pexels-1"/></div>
-        <div class="item"><img src="/img/photos/photo02.jpg" alt="pexels-2"/></div>
-        <div class="item"><img src="/img/photos/photo03.jpg" alt="pexels-3"/></div>
-        <div class="item"><img src="/img/photos/photo04.jpg" alt="pexels-4"/></div>
+        <!-- <div class="item"><img src="/img/photos/photo01.jpg" alt="pexels-1"/></div> -->
         <div class="item"><img src="/img/photos/photo05.jpg" alt="pexels-5"/></div>
+        <div class="item"><img src="/img/photos/photo04.jpg" alt="pexels-4"/></div>
+        <div class="item"><img src="/img/photos/photo12.jpg" alt="pexels-12"/></div>
+        <div class="item"><img src="/img/photos/photo02.jpg" alt="pexels-2"/></div>
         <div class="item"><img src="/img/photos/photo06.jpg" alt="pexels-6"/></div>
+        <!-- <div class="item"><img src="/img/photos/photo03.jpg" alt="pexels-3"/></div> -->
         <!-- <div class="item"><img src="/img/photos/photo07.jpg" alt="pexels-7"/></div> -->
         <!-- <div class="item"><img src="/img/photos/photo08.jpg" alt="pexels-8"/></div> -->
         <!-- <div class="item"><img src="/img/photos/photo09.jpg" alt="pexels-9"/></div> -->
         <!-- <div class="item"><img src="/img/photos/photo10.jpg" alt="pexels-10"/></div> -->
-        <div class="item"><img src="/img/photos/photo11.jpg" alt="pexels-11"/></div>
-        <div class="item"><img src="/img/photos/photo12.jpg" alt="pexels-12"/></div>
+        <!-- <div class="item"><img src="/img/photos/photo11.jpg" alt="pexels-11"/></div> -->
     </div>
     <!-- // Owl Carousel images -->
 
@@ -241,7 +253,7 @@
     <div class="container">
       <!-- Text Skills and Abilities -->
       <h2 class="title-main mywhite">Skills &#38; Abilities.</h2>
-      <p class="text-main mywhite">Description.</p>
+      <p class="text-main mywhite">Recent times engaged...</p>
       
       <div class="row">
         <!-- Skills percent 1 -->
@@ -252,7 +264,7 @@
               <div class="row">
                 <div class="col-sm-12 title-skill">Ruby</div>
                 <div class="col-sm-12 bar-skill">
-                  <div class="this-skill my-pink my-ninety"></div>
+                  <div class="this-skill my-pink my-ninety" style="background-color: rgba(0,0,0,.60)"></div>
                 </div>
               </div>
             </div>
@@ -261,12 +273,12 @@
         <!-- Skills percent 2 -->
         <div class="col-md-6 separ">
           <div class="row">
-            <div class="hidden-xs col-sm-2 icon-skill"></div>
+            <div class="hidden-xs col-sm-2 icon-skill"><img src="/img/erlang.png" /></div>
             <div class="col-sm-10">
               <div class="row">
-                <div class="col-sm-12 title-skill">Erlang OTP</div>
+                <div class="col-sm-12 title-skill">Erlang</div>
                 <div class="col-sm-12 bar-skill">
-                  <div class="this-skill my-pink my-eighty"></div>
+                  <div class="this-skill my-pink my-seventy" style="background-color: rgba(0,0,0,.60)"></div>
                 </div>
               </div>
             </div>
@@ -280,7 +292,7 @@
               <div class="row">
                 <div class="col-sm-12 title-skill">JavaScript</div>
                 <div class="col-sm-12 bar-skill">
-                  <div class="this-skill my-blue my-houndred"></div>
+                  <div class="this-skill my-blue my-houndred" style="background-color: rgba(0,0,0,.70)"></div>
                 </div>
               </div>
             </div>
@@ -294,7 +306,7 @@
               <div class="row">
                 <div class="col-sm-12 title-skill">PHP</div>
                 <div class="col-sm-12 bar-skill">
-                  <div class="this-skill my-blue my-houndred"></div>
+                  <div class="this-skill my-blue my-houndred" style="background-color: rgba(0,0,0,.70)"></div>
                 </div>
               </div>
             </div>
@@ -312,27 +324,27 @@
           <div class="cont-ab">
             <h4 class="title-four color-a">Software Skills</h4>
             <!-- Software Abilitie 1 -->
-            <div class="row">
-              <div class="col-xs-2"><img class="img-soft" alt="Example 1" data-src="holder.js/32x32"></div>
-              <div class="col-xs-5 ability">Example 1</div>
+            <div class="row">       
+              <div class="col-xs-2"><img class="img-soft" src="/img/git.png"></div>
+              <div class="col-xs-5 ability">Git</div>
               <div class="col-xs-5 expert">EXPERT</div>
             </div>
             <!-- Software Abilitie 2 -->
-            <div class="row">       
-              <div class="col-xs-2"><img class="img-soft" alt="Example 2" data-src="holder.js/32x32"></div>
-              <div class="col-xs-5 ability">Example 2</div>
-              <div class="col-xs-5 advanced">ADVANCED</div>
+            <div class="row"> 
+              <div class="col-xs-2"><img class="img-soft" src="/img/sublime.png"></div>
+              <div class="col-xs-5 ability">Sublime</div>
+              <div class="col-xs-5 expert">EXPERT</div>
             </div>
             <!-- Software Abilitie 3 -->
-            <div class="row"> 
-              <div class="col-xs-2"><img class="img-soft" alt="Example 3" data-src="holder.js/32x32"></div>
-              <div class="col-xs-5 ability">Example 3</div>
+            <div class="row">
+              <div class="col-xs-2"><img class="img-soft" src="/img/regex.png"></div>
+              <div class="col-xs-5 ability">Regexp</div>
               <div class="col-xs-5 expert">EXPERT</div>
             </div>
             <!-- Software Abilitie 4 -->
             <div class="row"> 
-              <div class="col-xs-2"><img class="img-soft" alt="Example 4" data-src="holder.js/32x32"></div>
-              <div class="col-xs-5 ability">Example 4</div>
+              <div class="col-xs-2"><i class="img-soft icon-postgres-alt"></i></div>
+              <div class="col-xs-5 ability">PostgreSQL</div>
               <div class="col-xs-5 advanced">ADVANCED</div>
             </div>
           </div>
@@ -343,10 +355,10 @@
             <h4 class="title-four color-b">Awesome Services</h4>
             <!-- Awesome Abilities -->
             <div class="row">
-              <div class="col-md-12 text-awsm">Example 1</div>
-              <div class="col-md-12 text-awsm">Example 2</div>
-              <div class="col-md-12 text-awsm">Example 3</div>
-              <div class="col-md-12 text-awsm">Example 4</div>
+              <div class="col-md-12 text-awsm">Ruby on Rails Development</div>
+              <div class="col-md-12 text-awsm">Vanilla Javascript</div>
+              <div class="col-md-12 text-awsm">Erlang OTP</div>
+              <div class="col-md-12 text-awsm">Github</div>
             </div>
             <!-- // Awesome Abilities -->
           </div>
@@ -360,37 +372,37 @@
               <div class="col-sm-6">
                 <div class="row">
                   <div class="col-md-12 intrst">
-                    <img alt="Example 1" data-src="holder.js/64x64">
+                    <img alt="Example 1" src="/img/server17.png">
                   </div>
                 </div>
-                <p class="text-interest">Example 1</p>
+                <p class="text-interest">Technologies</p>
               </div>
               <!-- Interest 2 -->
               <div class="col-sm-6">
                 <div class="row">
                   <div class="col-md-12 intrst">
-                    <img alt="Example 2" data-src="holder.js/64x64">
+                    <img alt="Example 2" src="/img/books8.png">
                   </div>
                 </div>
-                <p class="text-interest">Example 2</p>
+                <p class="text-interest">Books</p>
               </div>
               <!-- Interest 3 -->
               <div class="col-sm-6">
                 <div class="row">
                   <div class="col-md-12 intrst">
-                    <img alt="Example 3" data-src="holder.js/64x64">
+                    <img alt="Example 3" src="/img/nihon.png">
                   </div>
                 </div>
-                <p class="text-interest">Example 3</p>
+                <p class="text-interest">Japanese</p>
               </div>
               <!-- Interest 4 -->
               <div class="col-sm-6">
                 <div class="row">
                   <div class="col-md-12 intrst">
-                    <img alt="Example 4" data-src="holder.js/64x64">
+                    <img alt="Example 4" src="/img/headphones20.png">
                   </div>
                 </div>
-                <p class="text-interest">Example 4</p>
+                <p class="text-interest">Music</p>
               </div>
             </div>
           </div>
@@ -419,8 +431,8 @@
         </div>
         <!-- Info 1 Education -->
         <div class="cd-timeline-content">
-          <h2>Name of specialization</h2>
-          <h3>UNIVERSITY</h3>
+          <h2 style="font-size: 20px">Faculty of Electronics and Computer Technologies</h2>
+          <h3 style="font-size: 14px">National Research University of Electronic Technology</h3>
           <span class="cd-date">2014 June</span>
         </div>
       </div>
@@ -432,8 +444,8 @@
         </div> 
         <!-- Info 2 Education -->
         <div class="cd-timeline-content">
-          <h2>Name of specialization</h2>
-          <h3>SCHOOL</h3>
+          <h2>Profile Mathematics and Physics</h2>
+          <h3>High School</h3>
           <span class="cd-date">2010 June</span>
         </div> 
       </div> 
@@ -523,23 +535,8 @@
   <section id="download" class="full-download">
     <div class="container">
       <div class="row">
-        <!-- Social Networks -->
-        <div class="col-sm-12 btn-class col-md-7">
-          <a href="#" class="social-ink">
-            <img class="socl" src="/img/twitter-icon.png" alt="twitter"/>
-          </a>
-          <a href="#" class="social-ink">
-            <img class="socl" src="/img/facebook-icon.png" alt="facebook"/>
-          </a>
-          <a href="#" class="social-ink">
-            <img class="socl" src="/img/google-icon.png" alt="google"/>
-          </a>
-          <a href="https://www.linkedin.com/in/thekiba" target="_blank" class="social-ink">
-            <img class="socl" src="/img/linkedin-icon.png" alt="linkedin"/>
-          </a>
-        </div>
         <!-- Download Resume - CV -->
-        <div class="col-sm-5 btn-class hidden-sm hidden-xs">
+        <div class="col-sm-12 btn-class hidden-sm hidden-xs">
           <a class="btn-dwnld" href="#" disabled="disabled">Download Resume</a>
         </div>
       </div>
@@ -550,47 +547,31 @@
   <!-- Contact me -->
   <section id="contacto" class="full-section-three bg-contact">
     <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-xs-12 txt-center">
+          <p class="text-ct"><i class="glyphicon glyphicon-map-marker"></i> I live in <b>Podgorica</b></p>
+        </div>
+      </div>
       <!-- Title Contact me -->
       <h1 class="title-ct">Contact me.</h1>
       <p class="separator-ct"></p>
       <!-- Localization -->
       <div class="row">
-        <div class="col-md-6 col-xs-12 txt-center">
-          <p class="icon-ct glyphicon glyphicon-map-marker"></p>
-          <p class="text-ct">I live in <b>Podgorica</b></p>
-        </div>
         <!--Mail -->
-        <div class="col-md-6 col-xs-12 txt-center">
-          <p class="icon-ct glyphicon glyphicon-send"></p>
-          <p class="text-ct">hr@thekiba.io</p>
+        <div class="col-md-4 col-md-offset-2 col-xs-12 txt-center">
+          <a href="mailto:hr@thekiba.io" class="outlink">
+            <i class="glyphicon glyphicon-send"></i> 
+            hr@thekiba.io
+          </a>
+        </div>
+        <div class="col-md-4 col-xs-12 txt-center">
+          <a href="https://www.linkedin.com/in/thekiba" target="_blank" class="outlink">
+            <i class="fa fa-linkedin-square" style="font-size: 44px"></i> 
+            #thekiba
+          </a>
         </div>
       </div>
     </div>
-    <!-- Contact Form -->
-    <article class="container cntme">
-      <form method="post" action="#" id="ContactForm" name="ContactForm" class="validate-form">
-        <!-- Form inputs -->
-        <div class="row">
-          <div class="form-group col-md-6 col-md-offset-3">
-            <input type="text" class="form-control ct-name" name="name" id="name" placeholder="Your name" required disabled="disabled">
-          </div>
-          <div class="form-group col-md-6 col-md-offset-3">
-            <input type="email" class="form-control ct-mail" name="email" id="email" placeholder="Email" required disabled="disabled">
-          </div>
-          <div class="form-group col-md-6 col-md-offset-3">
-            <textarea class="form-control ct-message" rows="6" name="message" id="message" placeholder="Write anything here..." required disabled="disabled"></textarea>
-          </div>
-        </div>
-        <!-- Button Send -->
-        <div class="row">
-          <div class="form-group col-md-6 col-md-offset-3">
-            <div id="successmsg"></div>
-            <button type="submit" name="button" id="button" class="btn btnc2 with-br btn-ctc" disabled="disabled"><span>Send Now</span></button>
-          </div>
-        </div>
-      </form>
-    </article>
-    <!-- // Contact Form -->
   </section>
   <!-- // Contact me -->
 
@@ -634,5 +615,9 @@
   <script src="/js/sendemail.js"></script>
   <!-- Holder Image -->
   <script src="/js/holder.js"></script>
+  <!-- Sticky -->
+  <script src="/js/jquery.sticky.js"></script>
+  <!-- SmartResize -->
+  <script src="/js/debouncer.js"></script>
 </body>
 </html>
