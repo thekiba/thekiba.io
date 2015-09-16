@@ -255,7 +255,7 @@ a.callme:focus {
     background: rgba(0, 0, 0, 0);
     color: rgba(255, 255, 255, .47);
     border-radius: 50px;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 22px;
     margin-left: 15px;
     padding-right: 25px;
@@ -379,7 +379,7 @@ p.extend-details {
     color: #000
 }
 .cd-headline.type b {
-    font-weight: 400;
+    font-weight: 300;
     visibility: hidden
 }
 .cd-headline.type b.is-visible {
@@ -438,14 +438,14 @@ p.extend-details {
 }
 .text-main {
     font-size: 19px;
-    font-weight: 400
+    font-weight: 300
 }
 .my-extrame {
     background-color: #0d0c0d;
     padding-top: 50px;
-    padding-bottom: 50px;
+    /*padding-bottom: 50px;*/
     margin-top: 50px;
-    margin-bottom: 50px
+    /*margin-bottom: 50px*/
 }
 .img-myextra {
     text-align: center
@@ -462,7 +462,7 @@ p.extend-details {
 }
 .text-three {
     font-size: 19px;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     padding-bottom: 40px
 }
@@ -481,7 +481,7 @@ p.extend-details {
 }
 .text-rd {
     font-size: 19px;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center
 }
 .text-five {
@@ -870,7 +870,7 @@ p.extend-details {
 .cd-timeline-content h3 {
     color: #fff;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0;
     text-transform: uppercase
 }
@@ -1122,7 +1122,7 @@ p.extend-details {
     text-decoration: none;
     color: #748691;
     background: #fff;
-    font-weight: 400;
+    font-weight: 300;
     border-radius: 7px;
     padding-top: 16px;
     padding-right: 22px;
@@ -2100,7 +2100,7 @@ h1.jprt-item-title {
     }
     .text-rd {
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 300;
         text-align: center
     }
     .advanced,
@@ -2143,7 +2143,7 @@ h1.jprt-item-title {
     }
     .text-main {
         font-size: 19px;
-        font-weight: 400
+        font-weight: 300
     }
     .title-skill {
         padding-top: 20px
@@ -2199,7 +2199,7 @@ h1.jprt-item-title {
     }
     .text-main {
         font-size: 18px;
-        font-weight: 400
+        font-weight: 300
     }
     .img-rd {
         margin-top: 50px;
@@ -2216,7 +2216,7 @@ h1.jprt-item-title {
     }
     .text-rd {
         font-size: 17px;
-        font-weight: 400;
+        font-weight: 300;
         text-align: center
     }
     .owl-carousel .owl-stage-outer {
@@ -2386,7 +2386,7 @@ h1.jprt-item-title {
 
 .navbar.navbar-fixed-top .navbar-brand {
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 300;
   color: #a1a1a1;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -2401,7 +2401,7 @@ h1.jprt-item-title {
   height: 40px;
   line-height: 40px;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   color: #a1a1a1;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -2478,7 +2478,7 @@ h1.jprt-item-title {
   height: 35px;
   line-height: 35px;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   color: #a1a1a1;
   text-transform: uppercase;
   letter-spacing: 2px;
