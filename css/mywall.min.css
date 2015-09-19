@@ -747,6 +747,9 @@ p.extend-details {
     background: #f0ca45
 }
 @media only screen and (min-width: 1170px) {
+    .cd-headline.letters.type {
+        font-size: 25px;
+    }
     .txt-times {
         text-align: center;
         display: block;
@@ -2190,7 +2193,7 @@ h1.jprt-item-title {
         text-align: center
     }
     .cd-headline.letters.type {
-        font-size: 38px
+        font-size: 20px
     }
     .title-main {
         font-size: 50px;
