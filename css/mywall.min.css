@@ -352,7 +352,8 @@ p.extend-details {
     background-color: #0d0c0d;
     /*text-align: center;*/
     color: #fff;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    padding-right: 15px;
 }
 .cd-headline.letters.type {
     font-size: 35px;
