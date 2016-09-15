@@ -2058,6 +2058,10 @@ h1.jprt-item-title {
     transition: opacity 200ms ease;
     border-radius: 30px
 }
+.white-fox {
+    position: absolute;
+    right: 0;
+}
 @media (max-width: 1640px) {
     .contact-details .outlink {
         font-size: 28px;
@@ -2170,6 +2174,10 @@ h1.jprt-item-title {
     }
 }
 @media (max-width: 768px) {
+    .white-fox {
+        position: relative;
+        text-align: center;
+    }
     h1.name-boss {
         font-size: 50px;
         color: #fff;
