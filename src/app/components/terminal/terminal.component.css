@@ -1,0 +1,10 @@
+:host {
+    display: inline-block;
+    white-space: pre;
+    word-break: break-all;
+}
+
+i {
+    font-size: 80px;
+    color: #ffffff;
+}
