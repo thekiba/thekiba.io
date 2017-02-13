@@ -9,10 +9,14 @@
 .blinker:before {
     position: absolute;
     top: -36px;
+    top: -2.7vw;
     left: -15px;
+    left: -1.125vw;
     content: '';
     width: 4px;
+    width: 0.3vw;
     height: 46px;
+    height: 3vw;
     background-color: #ffffff;
     -webkit-animation-name: blinker;
     -webkit-animation-duration: 1s;

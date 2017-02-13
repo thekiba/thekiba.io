@@ -52,7 +52,7 @@ EmailService({
     ngOnInit() {
         this.text = Observable.from(this.originalText.split(''))
             .delay(1000)
-            .map(char => Observable.of(char).delay(Math.random() * 125 + 50))
+            .map(char => Observable.of(char).delay(Math.random() * 75 + 25))
             .concatAll()
             .do(() => this.ngChanged.emit())
             .scan((acc, char) => acc + char, '');
