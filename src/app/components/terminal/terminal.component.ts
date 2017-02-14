@@ -59,7 +59,9 @@ export class TerminalComponent implements OnInit {
 22:         with: Job
 23:     }).send();
 24: 
-25: }`;
+25: }
+
+// Make with ❤ in Montenegro.`;
 
     ngOnInit() {
         const random = () => Math.random() * 10 + 25;

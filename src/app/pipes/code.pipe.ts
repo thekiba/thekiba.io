@@ -36,7 +36,8 @@ export class CodePipe implements PipeTransform {
             .replace(/(Infinity)/ig, '<span class="infinity">$1</span>')
             .replace(/(defaultJob)/ig, '<span class="constant">$1</span>')
             .replace('hr@thekiba.io', '<a href="mailto:hr@thekiba.io" class="pulse string">hr@thekiba.io</a>')
-            .replace('hh.ru', '<a href="https://hh.ru" class="string">hh.ru</a>');
+            .replace('hh.ru', '<a href="https://hh.ru" class="string">hh.ru</a>')
+            .replace('❤', '💜');
     }
 
 }
