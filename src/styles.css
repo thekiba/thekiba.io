@@ -32,11 +32,12 @@ html, body {
     color: #66D9EF;
 }
 
+.class,
 .const {
     font-style: italic;
 }
 
-.string {
+.string, .string .infinity {
     color: #E6DB74;
 }
 
@@ -76,13 +77,13 @@ html, body {
     position: absolute;
     top: -36px;
     top: -2.5vw;
-    left: -15px;
-    left: -1.125vw;
+    left: 0vw;
     content: '';
     width: 4px;
     width: 0.3vw;
     height: 46px;
     height: 3vw;
+    margin-right: 0;
     background-color: #ffffff;
     -webkit-animation-name: blinker;
     -webkit-animation-duration: 1s;

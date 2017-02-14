@@ -14,49 +14,59 @@ export class TerminalComponent implements OnInit {
     text: Observable<string>;
 
     originalText: string = `// Kiba.ts
-import { Record } from 'immutable';
-
-class Kiba extends Record({ salary: Infinity }, 'Kiba') {};
-
-export default new Kiba();
+01: import { Record } from 'immutable';
+02: 
+03: class Kiba extends Record({ salary: Infinity }, 'Kiba') {};
+04: 
+05: export default new Kiba();
 
 
 // Job.ts
-import { Record } from 'immutable';
-
-const defaultJob = {
-    isBest: false,
-    salary: -Infinity
-};
-
-class Job extends Record(defaultJob, 'Job') {};
-
-export default new Job();
+01: import { Record } from 'immutable';
+02: 
+03: const defaultJob = {
+04:     isBest: false,
+05:     salary: -Infinity
+06: };
+07: 
+08: class Job extends Record(defaultJob, 'Job') {};
+09: 
+10: export default new Job();
 
 
 // Compare.ts
-import 'EmailService';
-
-import Kiba from './Kiba';
-import Job from './Job';
-
-if (Job.salary < Kiba.salary)
-    throw new Error('Don\`t write me email!');
-
-if (!Job.isBest)
-    throw new Error('Don\`t write me email!');
-
-EmailService({
-    to: 'Kiba <hr@thekiba.io>',
-    with: Job
-}).send();`;
+01: import 'EmailService';
+02: 
+03: import Kiba from './Kiba';
+04: import Job from './Job';
+05: 
+06: try {
+07: 
+08:     if (Job.salary < Kiba.salary)
+09:         throw new Error('Salary lower than Infinity!');
+10: 
+11:     if (!Job.isBest)
+12:         throw new Error('Job is\`t a perfect!');
+13: 
+14: } catch () {
+15: 
+16:     document.href = 'hh.ru';
+17: 
+18: } finally {
+19: 
+20:     EmailService({
+21:         to: 'Kiba <hr@thekiba.io>',
+22:         with: Job
+23:     }).send();
+24: 
+25: }`;
 
     ngOnInit() {
-        const random = () => Math.random() * 75 + 25;
+        const random = () => Math.random() * 50 + 50;
 
         this.text = Observable.from(this.originalText.split(''))
             .delay(1000)
-            .map(char => Observable.of(char).delay(random()))
+            .map(char => Observable.of(char).delay(char === ' ' ? 125 : random()))
             .concatAll()
             .do(() => this.ngChanged.emit())
             .scan((acc, char) => acc + char, '');
