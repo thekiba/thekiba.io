@@ -3,17 +3,18 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { CodePipe } from './pipes/code.pipe';
+
 import { AppComponent } from './app.component';
 import { FoxComponent } from './components/fox/fox.component';
 import { TerminalComponent } from './components/terminal/terminal.component';
-import { BlinkerComponent } from './components/blinker/blinker.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BlinkerComponent,
     TerminalComponent,
-    FoxComponent
+    FoxComponent,
+    CodePipe
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,15 @@
 .container {
-    overflow: scroll;
+    position: absolute;
+    overflow-y: scroll;
     width: 100vw;
-    height: 100vh;
+    height: 98vh;
+    right: -17px;
+}
+
+@media all and (orientation:portrait) {
+    
+    .container {
+        right: -34px !important;
+    }
+
 }

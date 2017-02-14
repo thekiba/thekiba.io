@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-body {
+html, body {
     background: #000;
     color: #fff;
     font-size: 46px;
@@ -8,4 +8,163 @@ body {
     font-family: 'Inconsolata', monospace;
     padding: 0;
     margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+@media all and (orientation:portrait) {
+    
+    body {
+        width: 90%;
+    }
+
+}
+
+.comment {
+    color: #75715E;
+}
+
+.class,
+.function,
+.const {
+    color: #66D9EF;
+}
+
+.const {
+    font-style: italic;
+}
+
+.string {
+    color: #E6DB74;
+}
+
+.infinity {
+    color: #AE81FF;
+}
+
+.operator {
+    color: #F92672;
+}
+
+.boolean {
+    color: #AE81FF;
+}
+
+.constant {
+    color: #AE81FF;
+}
+
+.conditional {
+    color: #F92672;
+}
+
+.keyword {
+    color: #A6E22E;
+}
+
+.blinker-container {
+    display: inline-block;
+}
+
+.blinker {
+    position: relative;
+}
+
+.blinker:before {
+    position: absolute;
+    top: -36px;
+    top: -2.5vw;
+    left: -15px;
+    left: -1.125vw;
+    content: '';
+    width: 4px;
+    width: 0.3vw;
+    height: 46px;
+    height: 3vw;
+    background-color: #ffffff;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-document url-prefix() {
+
+    .blinker:before {
+        top: 0px !important;
+        top: 0vw !important;
+    }
+
+}
+/* <= IE 7 */
+@media screen\9 {
+
+    .blinker:before {
+        top: 0px !important;
+        top: 0vw !important;
+    }
+}
+
+/* IE 8 */
+@media \0screen {
+
+    .blinker:before {
+        top: 0px !important;
+        top: 0vw !important;
+    }
+}
+
+/* >= IE10 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+    .blinker:before {
+        top: 0px !important;
+        top: 0vw !important;
+    }
+}
+
+@-moz-keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
 }

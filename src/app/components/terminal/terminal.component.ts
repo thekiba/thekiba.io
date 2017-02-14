@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Component({
     selector: 'terminal',
-    template: `{{ text | async }} <blinker></blinker>`,
+    template: `<div [innerHTML]="text | async | code"></div>`,
     styleUrls: [ 'terminal.component.css' ]
 })
 export class TerminalComponent implements OnInit {
@@ -20,6 +20,7 @@ class Kiba extends Record({ salary: Infinity }, 'Kiba') {};
 
 export default new Kiba();
 
+
 // Job.ts
 import { Record } from 'immutable';
 
@@ -32,11 +33,12 @@ class Job extends Record(defaultJob, 'Job') {};
 
 export default new Job();
 
+
 // Compare.ts
 import 'EmailService';
 
-import Kiba from './Kiba.ts';
-import Job from './Job.ts';
+import Kiba from './Kiba';
+import Job from './Job';
 
 if (Job.salary < Kiba.salary)
     throw new Error('Don\`t write me email!');
@@ -50,9 +52,11 @@ EmailService({
 }).send();`;
 
     ngOnInit() {
+        const random = () => Math.random() * 75 + 25;
+
         this.text = Observable.from(this.originalText.split(''))
             .delay(1000)
-            .map(char => Observable.of(char).delay(Math.random() * 75 + 25))
+            .map(char => Observable.of(char).delay(random()))
             .concatAll()
             .do(() => this.ngChanged.emit())
             .scan((acc, char) => acc + char, '');
