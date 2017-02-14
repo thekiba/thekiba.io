@@ -62,11 +62,11 @@ export class TerminalComponent implements OnInit {
 25: }`;
 
     ngOnInit() {
-        const random = () => Math.random() * 50 + 50;
+        const random = () => Math.random() * 10 + 25;
 
         this.text = Observable.from(this.originalText.split(''))
             .delay(1000)
-            .map(char => Observable.of(char).delay(char === ' ' ? 125 : random()))
+            .map(char => Observable.of(char).delay(char === ' ' ? 65 : random()))
             .concatAll()
             .do(() => this.ngChanged.emit())
             .scan((acc, char) => acc + char, '');
