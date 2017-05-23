@@ -1,6 +1,13 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+import 'rxjs/add/observable/from';
+import 'rxjs/add/operator/delay';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/concatAll';
+import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/scan';
 
 @Component({
     selector: 'terminal',
