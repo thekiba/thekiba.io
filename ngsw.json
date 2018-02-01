@@ -9,8 +9,8 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/inline.fe2f213c7168eca2038e.bundle.js",
-        "/main.f25016e84653969689a6.bundle.js",
+        "/inline.0138f3f5c6b7389c1cc8.bundle.js",
+        "/main.3ef088ca0a5bc018cc06.bundle.js",
         "/styles.e1aee3b4ed9ebbbb721e.bundle.css"
       ],
       "patterns": []
@@ -21,6 +21,7 @@
       "updateMode": "prefetch",
       "urls": [
         "/assets/img/fox.png",
+        "/assets/img/monster018-fox.png",
         "/assets/styles/animation.css"
       ],
       "patterns": []
@@ -28,12 +29,13 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/inline.fe2f213c7168eca2038e.bundle.js": "8a1f9dbf79c7906d8f14149b733d3511bcc049d9",
+    "/inline.0138f3f5c6b7389c1cc8.bundle.js": "0749ce87defca3c5ff07149b085a8a02291a0ba1",
     "/assets/img/fox.png": "3d79b543e8c42d4e9f09c5f44aae45618561f55b",
-    "/main.f25016e84653969689a6.bundle.js": "f96d1b6ebae24ad055c5ee138254350ef7832905",
-    "/assets/styles/animation.css": "2ba1d516266465a66d43a19b864a1333a6f46abb",
+    "/main.3ef088ca0a5bc018cc06.bundle.js": "1ca2c6e951e58ead46cb299954ac8b479706d577",
+    "/assets/img/monster018-fox.png": "f867d3e17634ae860d5181345d32107b7932d2cc",
     "/styles.e1aee3b4ed9ebbbb721e.bundle.css": "8b9964f3e7614604abfcd02908f098659f360e15",
+    "/assets/styles/animation.css": "2ba1d516266465a66d43a19b864a1333a6f46abb",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "8042e9c5762e5443dc164403d4cbe2b13d280c57"
+    "/index.html": "a90b80d223104579c092c4c11f64c4350a699e6d"
   }
 }
