@@ -5,7 +5,7 @@ export class CodePipe implements PipeTransform {
 
     transform(text: string) {
         const blinker = `<div class="blinker-container"><span class="blinker"></span></div>`;
- 
+
         if (!text)
             return blinker;
 
@@ -36,8 +36,13 @@ export class CodePipe implements PipeTransform {
             .replace(/(Infinity)/ig, '<span class="infinity">$1</span>')
             .replace(/(defaultJob)/ig, '<span class="constant">$1</span>')
             .replace('hr@thekiba.io', '<a href="mailto:hr@thekiba.io" class="pulse string">hr@thekiba.io</a>')
+            .replace('\'@thekiba\'', '\'<a href="https://t.me/thekiba" class="pulse string">@thekiba</a>\'')
             .replace('hh.ru', '<a href="https://hh.ru" class="string">hh.ru</a>')
-            .replace('❤', '💜');
+            .replace('❤', '<span class="emoji">💜</span>')
+            .replace('∆', '<span class="emoji">🦊</span>')
+            .replace('ƒ', '<span class="emoji">🚀</span>')
+            .replace('キ', '<span class="emoji">キ</span>')
+            .replace('バ', '<span class="emoji">バ</span>');
     }
 
 }

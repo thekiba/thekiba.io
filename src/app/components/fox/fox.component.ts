@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'fox',
+    selector: 'app-fox',
     template: `<img src="assets/img/fox.png" class="pulse" />`,
     styleUrls: [ 'fox.component.css' ]
 })

@@ -3,8 +3,7 @@
 html, body {
     background: #000;
     color: #fff;
-    font-size: 46px;
-    font-size: 3vw;
+    font-size: 3vh;
     font-family: 'Inconsolata', monospace;
     padding: 0;
     margin: 0;
@@ -14,8 +13,13 @@ html, body {
     position: relative;
 }
 
+.emoji {
+  vertical-align: middle;
+  line-height: 0;
+}
+
 @media all and (orientation:portrait) {
-    
+
     body {
         width: 90%;
     }
@@ -75,14 +79,11 @@ html, body {
 
 .blinker:before {
     position: absolute;
-    top: -36px;
-    top: -2.5vw;
-    left: 0vw;
+    top: -2.5vh;
+    left: 0;
     content: '';
-    width: 4px;
-    width: 0.3vw;
-    height: 46px;
-    height: 3vw;
+    width: 0.3vh;
+    height: 3vh;
     margin-right: 0;
     background-color: #ffffff;
     -webkit-animation-name: blinker;
