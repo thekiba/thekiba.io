@@ -3,6 +3,7 @@
   width: 60vh;
   height: 60vh;
   animation: going 6s linear infinite;
+  position: absolute;
 }
 
 .fox {
@@ -53,15 +54,15 @@
 
 @keyframes going {
   0% {
-    margin-left: -60vw;
+    margin-left: -60vh;
     filter: drop-shadow(-10vh -10vh 0px rgba(255,255,255,0));
   }
   50% {
-    margin-left: 110vw;
+    margin-left: 110vh;
     filter: drop-shadow(10vh -10vh 0px rgba(255,255,255,0.3));
   }
   100% {
-    margin-left: -60vw;
+    margin-left: -60vh;
     filter: drop-shadow(-10vh -10vh 0px rgba(255,255,255,0));
   }
 }

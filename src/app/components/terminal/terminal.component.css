@@ -2,5 +2,5 @@
     display: inline-block;
     white-space: pre;
     word-break: break-all;
-    padding: 5px;
+    padding: calc(60vh + 5px) 5px 5px 10px;
 }
