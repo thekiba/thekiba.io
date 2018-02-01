@@ -1,7 +1,68 @@
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60vh;
-    height: 60vh;
+:host {
+  display: block;
+  width: 60vh;
+  height: 60vh;
+  animation: going 6s linear infinite;
 }
+
+.fox {
+  display: block;
+  width: 60vh;
+  height: 60vh;
+
+  background: url('/assets/img/monster018-fox.png') no-repeat;
+
+  background-size: 240vh 240vh;
+  image-rendering: pixelated;
+
+  animation: fox 6s steps(1) infinite;
+}
+
+
+@keyframes fox {
+  0% { background-position: -60vh -120vh; }
+  4% { background-position: -120vh -120vh; }
+  8% { background-position: -180vh -120vh; }
+  12% { background-position: -120vh -120vh; }
+
+  16% { background-position: -60vh -120vh; }
+  20% { background-position: -120vh -120vh; }
+  24% { background-position: -180vh -120vh; }
+  28% { background-position: -120vh -120vh; }
+
+  32% { background-position: -60vh -120vh; }
+  36% { background-position: -120vh -120vh; }
+  40% { background-position: -180vh -120vh; }
+  44% { background-position: -120vh -120vh; }
+
+  48% { background-position: -60vh -60vh; }
+  52% { background-position: -120vh -60vh; }
+  56% { background-position: -180vh -60vh; }
+  60% { background-position: -120vh -60vh; }
+
+  64% { background-position: -60vh -60vh; }
+  68% { background-position: -120vh -60vh; }
+  72% { background-position: -180vh -60vh; }
+  76% { background-position: -120vh -60vh; }
+
+  80% { background-position: -60vh -60vh; }
+  84% { background-position: -120vh -60vh; }
+  88% { background-position: -180vh -60vh; }
+  92% { background-position: -120vh -60vh; }
+}
+
+@keyframes going {
+  0% {
+    margin-left: -60vw;
+    filter: drop-shadow(-10vh -10vh 0px rgba(255,255,255,0));
+  }
+  50% {
+    margin-left: 110vw;
+    filter: drop-shadow(10vh -10vh 0px rgba(255,255,255,0.3));
+  }
+  100% {
+    margin-left: -60vw;
+    filter: drop-shadow(-10vh -10vh 0px rgba(255,255,255,0));
+  }
+}
+
