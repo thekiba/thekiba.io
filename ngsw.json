@@ -9,8 +9,8 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/inline.923ea2d7ef71d42168d1.bundle.js",
-        "/main.c2862812fc00376e99fd.bundle.js",
+        "/inline.fe2f213c7168eca2038e.bundle.js",
+        "/main.f25016e84653969689a6.bundle.js",
         "/styles.e1aee3b4ed9ebbbb721e.bundle.css"
       ],
       "patterns": []
@@ -28,12 +28,12 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/inline.923ea2d7ef71d42168d1.bundle.js": "765d3d8d99221c28106da7f8b39ba675c989dadd",
+    "/inline.fe2f213c7168eca2038e.bundle.js": "8a1f9dbf79c7906d8f14149b733d3511bcc049d9",
     "/assets/img/fox.png": "3d79b543e8c42d4e9f09c5f44aae45618561f55b",
-    "/main.c2862812fc00376e99fd.bundle.js": "3ed76b70038108c52ada063220fa349bb8d8e4c0",
+    "/main.f25016e84653969689a6.bundle.js": "f96d1b6ebae24ad055c5ee138254350ef7832905",
     "/assets/styles/animation.css": "2ba1d516266465a66d43a19b864a1333a6f46abb",
     "/styles.e1aee3b4ed9ebbbb721e.bundle.css": "8b9964f3e7614604abfcd02908f098659f360e15",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "1d4a636348605ca8c1f4a8744e57f3219f88a11c"
+    "/index.html": "8042e9c5762e5443dc164403d4cbe2b13d280c57"
   }
 }
