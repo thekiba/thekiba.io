@@ -17,11 +17,9 @@ export class TerminalComponent {
 
     originalText: string = `01: export default {
 02:   name: 'キバ',
-03:   bio: '∆ Reactive Fox ƒ',
-04:   position: 'Lead Frontend',
-05:   telegram: '@thekiba',
-06:   email: 'hr@thekiba.io'
-07: };
+03:   telegram: '@thekiba',
+04:   email: 'hr@thekiba.io'
+05: };
 
 // Make with ❤ in Anywhere.`;
 
