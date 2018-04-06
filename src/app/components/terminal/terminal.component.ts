@@ -1,33 +1,40 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/observable/from';
-import 'rxjs/add/operator/delay';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/concatAll';
-import 'rxjs/add/operator/scan';
+import { from } from 'rxjs/observable/from';
+import { of } from 'rxjs/observable/of';
+import { concatMap, delay, scan } from 'rxjs/operators';
+
+function randomDelayWrapper(char): Observable<string> {
+    const timeout: number = char === ' ' ? 35 : (Math.random() * 10 + 25);
+
+    return of(char).pipe(delay(timeout));
+}
+
+function typewriterWrapper(text: string): Observable<string> {
+    return from(text.split(''))
+        .pipe(
+            delay(1000),
+            concatMap(randomDelayWrapper),
+            scan((acc, char) => acc + char, '')
+        );
+}
+
+const TERMINAL_TEXT = `export default {
+  name: 'Andrew Grekov',
+  company: 'IndigoSoft',
+  telegram: '@thekiba',
+  email: 'hr@thekiba.io'
+};`;
 
 @Component({
     selector: 'app-terminal',
     template: `<div [innerHTML]="text$ | async | code"></div>`,
-    styleUrls: [ 'terminal.component.css' ]
+    styleUrls: [ 'terminal.component.css' ],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TerminalComponent {
 
-    originalText: string = `01: export default {
-02:   name: 'キバ',
-03:   telegram: '@thekiba',
-04:   email: 'hr@thekiba.io'
-05: };
-
-// Make with ❤ in Anywhere.`;
-
-  text$: Observable<string> =
-    Observable.from(this.originalText.split(''))
-              .delay(1000)
-              .map(char => Observable.of(char).delay(char === ' ' ? 35 : (Math.random() * 10 + 25)))
-              .concatAll()
-              .scan((acc, char) => acc + char, '');
+    text$: Observable<string> = typewriterWrapper(TERMINAL_TEXT);
 
 }

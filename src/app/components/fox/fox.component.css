@@ -54,15 +54,15 @@
 
 @keyframes going {
   0% {
-    margin-left: -60vh;
+    margin-left: -70vh;
     filter: drop-shadow(-10vh -10vh 0px rgba(255,255,255,0));
   }
   50% {
-    margin-left: 110vh;
+    margin-left: 90vh;
     filter: drop-shadow(10vh -10vh 0px rgba(255,255,255,0.3));
   }
   100% {
-    margin-left: -60vh;
+    margin-left: -70vh;
     filter: drop-shadow(-10vh -10vh 0px rgba(255,255,255,0));
   }
 }

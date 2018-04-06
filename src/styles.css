@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body {
-  background: #000;
+  background: #263238;
   color: #fff;
   font-size: 3vh;
   font-family: 'Inconsolata', monospace;
@@ -35,7 +35,7 @@ html, body {
 }
 
 .string, .string .infinity {
-    color: #E6DB74;
+    color: #d09175;
 }
 
 .infinity {
@@ -43,7 +43,7 @@ html, body {
 }
 
 .operator {
-    color: #F92672;
+    color: #529bd5;
 }
 
 .boolean {
